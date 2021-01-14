@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>Reload this page, or click on the link below to invoke the onbeforeunload event.</p>
+    <script>
+        window.onbeforeunload = function() {
+            var r = confirm("Do you want to leave?");
+            if (r == true) {
+                //I will call my method
+            } else {
+                return false;
+            }
+        };
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--fancybox links-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+
+<body>
+    <!--gallery start-->
+    <div style="background-color: #ffb4a2;">
+        <div class="container">
+            <h1 class="text-center mx-auto p-5 chtitle">Prices
+                <span class="d-flex justify-content-center ">
+                    <hr class="w-25"></span>
+            </h1>
+            <div class="row py-5">
+                <div class="col-lg-4 col-md-12 d-flex justify-content-center align-content-center my-sm-3">
+                    <figure>
+                        <a data-fancybox="gallery" href="/asset//galleryimages/Uimg1.png" data-caption="this is image">
+                            <img class="img-fluid  img-thumbnail img-responsive " src="/asset/galleryimages/Uimg1.png"></a>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-12 d-flex justify-content-center align-content-center my-sm-3">
+                    <figure>
+                        <a data-fancybox="gallery" href="/asset/galleryimages/gst.jfif">
+                            <img class="img-fluid  img-thumbnail img-responsive" src="/asset/galleryimages/gst.jfif"></a>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-12 d-flex justify-content-center align-content-center my-sm-3">
+                    <figure>
+                        <a data-fancybox="gallery" href="/asset/galleryimages/Uimg3.jpg">
+                            <img class="img-fluid  img-thumbnail img-responsive" src="/asset/galleryimages/Uimg3.jpg"></a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--gallery end-->
+    <!--Project start-->
+
+    <!--Project end-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <!--fancy box script-->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js">
+    </script>
+    <script>
+        $('[data-fancybox="gallery"]').fancybox({
+            // Options will go here
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ],
+            animationEffect: "zoom-in-out",
+        })
+    </script>
+</body>
+
+</html>

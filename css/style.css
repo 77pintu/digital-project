@@ -1,0 +1,182 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Ubuntu&display=swap');
+    :root {
+        --nunito: "Nunito";
+        --ubuntu: "Ubuntu";
+        --bggradient: linear-gradient(to top, #9f753e, #8d6e40, #7c6641, #6c5e43, #5d5545, #625949, #675d4d, #6c6151, #887359, #a68561, #c7976b, #e9a876);
+    }
+    
+    body {
+        font-family: var(--ubuntu), sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5em;
+        color: #575559;
+        background: var(--bggradient);
+    }
+    
+    .htext {
+        line-height: 1.5em;
+    }
+    
+    h1 {
+        font-family: var(--nunito);
+        font-size: 2em;
+        color: whitesmoke;
+    }
+    
+    header {
+        background: #dd2476 !important;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .navbar {
+        background-color: #f6f6f8 !important;
+        box-shadow: 24px 23px 53px -21px rgba(0, 0, 0, 0.81);
+        -webkit-box-shadow: 24px 23px 53px -21px rgba(0, 0, 0, 0.81);
+        -moz-box-shadow: 24px 23px 53px -21px rgba(0, 0, 0, 0.81);
+    }
+    
+    .img-nav {
+        width: 100px;
+        height: 100px;
+        margin: 0px 2em;
+        padding: 0px 10px;
+    }
+    
+    .navbar-nav li a {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: #264653 !important;
+    }
+    
+    .navbar-nav li a:hover {
+        color: #FC427B !important;
+        border-bottom: 1px solid green;
+        transition: all 500ms ease-out;
+    }
+    
+    .chtitle {
+        color: #F9F871;
+        font-size: larger;
+    }
+    
+    .htitle {
+        color: #636e72;
+        text-decoration: none;
+        font-size: 1.6rem;
+    }
+    
+    .htitle:hover {
+        color: #8a5a44 !important;
+    }
+    
+    .home_text {
+        line-height: 1.7em;
+        font-size: 1.7rem;
+        text-align: justify;
+    }
+    
+    .overview_col {
+        background-color: #2B2B2B;
+    }
+    
+    .c_text {
+        line-height: 1.6em;
+        font-size: 1.4rem;
+        color: #ce9e62;
+    }
+    
+    .fancy_list {
+        line-height: 200%;
+        font-weight: bolder;
+        font-size: larger;
+    }
+    
+    .service_bg {
+        background-color: #646C79;
+        padding: 30px 20px;
+    }
+    
+    .img-responsive {
+        width: 400px;
+        height: 400px;
+    }
+    
+    #gallerybc {
+        background-color: #DADED4;
+    }
+    
+    .img-bharat {
+        width: 400px;
+        height: 380px;
+    }
+    
+    .ubharat_text {
+        font-size: 20px;
+        line-height: 30px;
+        color: #393f4d;
+        margin-top: -10px;
+        text-align: justify;
+    }
+    
+    .cimg {
+        width: 100%;
+        height: 570px;
+    }
+    
+    .card:hover {
+        background-color: #293241;
+        transition: all 0.5s linear;
+        color: white;
+    }
+    
+    .arrowicon {
+        background: var(--bggradient);
+        cursor: pointer;
+    }
+    
+    .socialicon i {
+        color: #8a5a44;
+        padding: 18px 5px;
+        cursor: pointer;
+    }
+    
+    .shortnews {
+        margin-top: -55px;
+    }
+    
+    .newsinput {
+        width: 70%;
+    }
+    
+    @media(max-width:892px) {
+        .navbar-light .navbar-nav .nav-link {
+            text-align: center !important;
+            border-bottom: none;
+        }
+        .htitle {
+            display: block;
+        }
+        .cmargin {
+            margin-bottom: 15px;
+        }
+    }
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #ecf0f1 !important;
+        z-index: 9999;
+        transition: all 0.3 ease-in-out;
+        opacity: 0.9;
+    }
